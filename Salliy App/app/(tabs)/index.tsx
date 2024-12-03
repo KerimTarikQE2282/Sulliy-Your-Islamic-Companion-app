@@ -58,6 +58,8 @@ export default function Index() {
           </TouchableOpacity>
     )
   })
+  // AppRegistry.registerComponent(...);
+  
   return (
     <SafeAreaView  className="bg-primary h-full w-full px-5 "   >
       <ImageBackground

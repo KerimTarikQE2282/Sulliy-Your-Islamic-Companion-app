@@ -1,13 +1,13 @@
 import { ImageBackground, ImageBackgroundBase, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import silloutte from '../../assets/images/Sillouette.png'
-import { Menu } from 'lucide-react-native';
+import { HelpingHand, Menu } from 'lucide-react-native';
 import { Heart } from 'lucide-react-native';
 import { Sun } from 'lucide-react-native';
-import { Moon } from 'lucide-react-native';
-import { Bed } from 'lucide-react-native';
+import { Sunset } from 'lucide-react-native';
+import { BedDouble } from 'lucide-react-native';
+import { HandHelping } from 'lucide-react-native';
 import { Sunrise } from 'lucide-react-native';
 import { Book } from 'lucide-react-native';
-
 import { useState } from "react";
 import { router } from "expo-router";
 
@@ -18,23 +18,24 @@ export default function Athkar() {
       "id": 1,
       "title": "Morning Athkar",
       "icon": <Sun color={'white'} className="w-[10vw] h-[10vw]" size={45}/>,
-      "route": "/HomeTouchables/Athkars/MorningAthkars.tsx",
+      "route": "./Athkars/MorningAthkars",
       "color": "#FFA500"
     },
     {
       "id": 2,
       "title": "Evening Athkar",
-      "icon": <Moon color={'white'} className="w-[10vw] h-[10vw]" size={45}/>,
+      "icon": <Sunset color={'white'} className="w-[10vw] h-[10vw]" size={45}/>,
       "route": "/evening-athkar",
       "color": "#1E90FF"
     },
     {
       "id": 3,
       "title": "Sleep Athkar",
-      "icon": <Bed color={'white'} className="w-[10vw] h-[10vw]"  size={45}/>,
+      "icon": <BedDouble color={'white'} className="w-[10vw] h-[10vw]"  size={45}/>,
       "route": "/sleep-athkar",
       "color": "#FF6347"
     },
+    
     {
       "id": 4,
       "title": "Waking up Athkar",
@@ -48,10 +49,17 @@ export default function Athkar() {
       "icon": <Book color={'white'} className="w-[15vw] h-[15vw] " size={45} />,
       "route": "/surah-al-kahf",
       "color": "#3CB371"
+    },
+    {
+      "id": 6,
+      "title": "Duas",
+      "icon": <HelpingHand color={'white'} className="w-[15vw] h-[15vw] " size={45} />,
+      "route": "/surah-al-kahf",
+      "color": "#1E90FF"
     }
   ];
   
-  const AzkarTyesList=athkarTypes.map(data=>{
+  const AzkarTyesList=athkarTypes.map((data:any)=>{
 return(
   <TouchableOpacity className="mt-10" onPress={()=>router.push(data.route) }>
   <View style={{ backgroundColor: 'rgba(0, 0, 0,0.2)' }} className="w-full h-[10vh] rounded-xl flex-row">
@@ -59,7 +67,7 @@ return(
   {data.icon}
 </View>
     <View>
-      <Text className="ml-10 text-white text-4xl font-bold mt-8">{data.title}</Text>
+      <Text className="ml-10 text-white text-2xl font-bold mt-8">{data.title}</Text>
     </View>
   </View>
 </TouchableOpacity>
