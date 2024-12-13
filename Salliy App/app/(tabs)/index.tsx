@@ -27,7 +27,7 @@ export default function Index() {
       icon:statistics,
       text:'Tracker',
       color:'#0000FF',
-      pagelink:'./HomeTouchables/Tasbih'
+      pagelink:'./HomeTouchables/Tracker'
 
     },
     {
@@ -41,7 +41,7 @@ export default function Index() {
       icon:tasbih,
       text:'Tasbih',
       color:'#FFA500',
-      pagelink:'./HomeTouchables/athkar'
+      pagelink:'./HomeTouchables/Tasbih'
 
     }
   ]

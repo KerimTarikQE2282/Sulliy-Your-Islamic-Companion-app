@@ -67,7 +67,7 @@ return(
   {data.icon}
 </View>
     <View>
-      <Text className="ml-10 text-white text-2xl font-bold mt-8">{data.title}</Text>
+      <Text className="ml-10 text-white text-4xl font-bold mt-9">{data.title}</Text>
     </View>
   </View>
 </TouchableOpacity>
