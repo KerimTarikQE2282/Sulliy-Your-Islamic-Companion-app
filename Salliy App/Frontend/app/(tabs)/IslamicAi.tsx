@@ -12,6 +12,9 @@ export default function IslamicAi() {
         <View className="bg-black text-white text-3xl w-[95vw] rounded-t-lg h-[10vh]">
           <Text className="text-white text-center py-10 text-2xl font-bold">Ask Islamic Ai any thing</Text>
         </View>
+        <View>
+          
+        </View>
 <View>
       <View className='flex flex-row   h-[5vh] rounded-lg py-5 w-[90vw] text-2xl mt-10  px-5 bg-slate-100 justify-center relative top-[65vh] left-3 '>
         <TextInput
